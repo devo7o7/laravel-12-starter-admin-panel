@@ -27,9 +27,7 @@
             </div>
             <div class="input-group">
                 <span class="input-group-text bg-light border-end-0"><i class="bi bi-shield-lock text-primary"></i></span>
-                {{-- Added id="password" --}}
                 <input type="password" id="password" name="password" class="form-control border-x-0 @error('password') is-invalid @enderror" placeholder="••••••••" required>
-                {{-- Toggle Button --}}
                 <button class="btn btn-outline-light border border-start-0 text-muted" type="button" id="togglePassword">
                     <i class="bi bi-eye" id="eyeIcon"></i>
                 </button>
@@ -42,10 +40,20 @@
             <label class="form-check-label small" for="remember">Remember this device</label>
         </div>
 
-        <button type="submit" class="btn btn-primary w-100 py-2 shadow-sm">
+        <button type="submit" class="btn btn-primary w-100 py-2 shadow-sm mb-3">
             Access Dashboard <i class="bi bi-arrow-right-short ms-1"></i>
         </button>
     </form>
+
+    {{-- ADDED SIGN UP OPTION HERE --}}
+    <hr class="text-muted opacity-25 my-4">
+
+    <div class="text-center">
+        <p class="small text-muted mb-0">Don't have an account?</p>
+        <a href="{{ route('register') }}" class="fw-bold text-decoration-none text-primary">
+            Create an Account <i class="bi bi-person-plus ms-1"></i>
+        </a>
+    </div>
 
     {{-- Script to handle toggle --}}
     <script>
@@ -54,11 +62,8 @@
         const eyeIcon = document.querySelector('#eyeIcon');
 
         togglePassword.addEventListener('click', function (e) {
-            // toggle the type attribute
             const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
             password.setAttribute('type', type);
-            
-            // toggle the eye / eye slash icon
             eyeIcon.classList.toggle('bi-eye');
             eyeIcon.classList.toggle('bi-eye-slash');
         });
