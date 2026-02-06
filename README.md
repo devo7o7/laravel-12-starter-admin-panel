@@ -29,7 +29,7 @@ This project includes:
 ### ✅ User Management
 - Create / Edit / Delete users
 - Assign roles to users
-- Filter/search (if added)
+- Filter/search
 
 ### ✅ User Logs & Analytics
 - Track user actions (login, logout, CRUD actions)
@@ -51,18 +51,6 @@ This project includes:
 - MySQL / MariaDB
 
 ---
-
-✅ Step 4: Push to GitHub
-
-After adding screenshots:
-
-git add .
-git commit -m "Added screenshots"
-git push
-
-⭐ Bonus Tip (For Best Look)
-
-If you want a clean grid/table layout, use this:
 
 ## 🖼 Screenshots
 
