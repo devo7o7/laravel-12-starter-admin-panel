@@ -74,7 +74,7 @@ If you want a clean grid/table layout, use this:
 
 | Users List | Create User | Roles Management |
 |-----------|-------------|------------------|
-| ![Users](screenshots/usersList.png) | ![Create User](screenshots/CreateUser.png) | ![Roles](screenshots/RolesManagement.png) |
+| ![Users](screenshots/UsersList.png) | ![Create User](screenshots/CreateUser.png) | ![Roles](screenshots/RoleManagement.png) |
 
 | Create Role | Permissions | Create Permission |
 |------------|-------------|-------------------|
