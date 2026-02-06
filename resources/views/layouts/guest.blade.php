@@ -12,32 +12,38 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <style>
-        body {
-    /* Uses the local image with the blue accounting overlay */
+   body {
     background: linear-gradient(135deg, rgba(146, 186, 245, 0.39) 0%, rgba(8, 66, 152, 0.9) 100%), 
                 url("{{ asset('image/bg2.jpg') }}");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
+    
+    /* Use min-height so it grows with the form */
+    min-height: 100vh; 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
     margin: 0;
+    padding: 40px 0; /* Prevents logo from touching the top */
 }
-        
-        .auth-card {
-            width: 100%;
-            max-width: 420px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            /* Glassmorphism effect */
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
+
+/* Keep the container as a standard block 
+   so the Bootstrap grid (row/col) works correctly 
+*/
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    /* ... rest of your glassmorphism CSS ... */
+    margin-left: auto;
+    margin-right: auto;
+}
 
         .auth-logo {
             width: 75px;

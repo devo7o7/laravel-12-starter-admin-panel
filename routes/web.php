@@ -8,7 +8,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AnalyticsController;
 Route::get('/', function () {
-    return view('auth.login');
+    return view('home');
 });
 
 // Route::get('/dashboard', function () {
