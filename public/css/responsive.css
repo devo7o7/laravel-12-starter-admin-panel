@@ -1,0 +1,9 @@
+@media(max-width:992px){
+	.banner-text{
+        position: relative !important;
+        transform: none !important;
+        left: auto !important;
+        top: auto !important;
+        padding: 10px !important;
+    }
+}

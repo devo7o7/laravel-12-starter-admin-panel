@@ -1,0 +1,169 @@
+/* Typography */
+@font-face {
+    font-family: 'DMSans semibold';
+    src: url(../fonts/DMSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter regular';
+    src: url(../fonts/Inter_24pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter medium';
+    src: url(../fonts/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'DMSans Bold';
+    src: url(../fonts/DMSans-Bold.ttf);
+}
+
+
+/* Background with image gradient */
+html,body{
+  height: 100%;
+  font-family: 'Inter regular';
+}
+
+body {
+  background: url("../image/bg.png") no-repeat center center fixed;
+}
+
+/* Navbar Custom Styles */
+.navbar-custom {
+  border-bottom:1px solid #c0c0c3;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.brand-text {
+  line-height: 1.2;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.brand-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #4ade80; /* green */
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+
+/* Centered Content */
+.main-content {
+  margin-top: 20px;
+}
+
+.main-title {
+  font-family: 'DMSans semibold';
+  color: #1e40af;
+  font-size: 42px;
+}
+.subtitle {
+  font-family: 'Inter regular';
+  color: #666666;
+  margin-top: 8px;
+  margin-bottom: 180px;
+}
+
+/* Suggestions Buttons */
+.suggestions .btn,.logout-btn {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  border: none;
+  color: #2a2a2a;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.suggestions .btn:hover {
+  background: #f0f4ff;
+  transform: translateY(-2px);
+}
+
+/* Query Box */
+.query-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.query-box input {
+  border-radius: 12px 0 0 12px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  width: 300px;
+}
+
+/* Gradient Button */
+
+.query-box button,.logout-btn:hover {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #1e40af, #2563eb);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.query-box button:hover {
+  background: linear-gradient(90deg, #15318b, #1d4ed8);
+}
+.suggestions .question{
+  background: #c6d2f8;
+}
+#chatContainer {
+    max-height: 70vh; 
+    overflow-y: auto;
+
+    /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+    scrollbar-width: thin; /* for Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+}
+
+#chatContainer::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just to be safe */
+}
+
+#chatContainer::-webkit-scrollbar-thumb {
+    background: transparent; /* Invisible thumb */
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+  .query-box input {
+    width: 200px;
+  }
+  .main-content{
+    margin-top: 10px;
+  }
+  .fs-6,.fs-5,p{
+    zoom:90%;
+  }
+}

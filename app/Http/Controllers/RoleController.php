@@ -1,0 +1,64 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+class RoleController extends Controller
+{
+   public function index(Request $request)
+{
+    $search = $request->input('search');
+
+    $roles = Role::query()
+        ->withCount('permissions') // Eager load the count
+        ->when($search, function ($query, $search) {
+            return $query->where('name', 'like', "%{$search}%");
+        })
+        ->latest()
+        ->paginate(10)
+        ->withQueryString();
+
+    return view('roles.index', compact('roles', 'search'));
+}
+    public function create() {
+        $permissions = Permission::all();
+    return view('roles.create', compact('permissions'));
+    }
+
+    public function store(Request $request)
+{
+    $request->validate([
+        'name' => 'required|unique:roles,name',
+        'permissions' => 'array'
+    ]);
+
+    $role = Role::create(['name' => $request->name]);
+
+    if ($request->permissions) {
+        $role->syncPermissions($request->permissions);
+    }
+
+    return redirect()->route('roles.index')->with('success','Role created successfully');
+}
+
+  public function edit(Role $role)
+{
+    $permissions = Permission::all();
+    return view('roles.edit', compact('role','permissions'));
+}
+
+public function update(Request $request, Role $role)
+{
+    $role->update(['name' => $request->name]);
+    $role->syncPermissions($request->permissions ?? []);
+    return redirect()->route('roles.index')->with('success','Role updated');
+}
+
+    public function destroy(Role $role) {
+        $role->delete();
+        return back();
+    }
+}
