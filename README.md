@@ -56,5 +56,42 @@ This project includes:
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/devo7o7/laravel-12-starter-admin-panel.git
+cd laravel-12-starter-admin-panel
+
+ 2️⃣ Install PHP Dependencies
+composer install
+
+3️⃣ Create Environment File
+cp .env.example .env
+
+4️⃣ Generate Application Key
+php artisan key:generate
+
+5️⃣ Setup Database
+
+Create a database and update your .env file:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_admin
+DB_USERNAME=root
+DB_PASSWORD=
+
+6️⃣ Run Migrations + Seeders
+php artisan migrate --seed
+
+7️⃣ Install Frontend Dependencies
+npm install
+
+8️⃣ Build Frontend Assets
+npm run build
+
+9️⃣ Run the Application
+php artisan serve
+
+
+Now open:
+
+http://127.0.0.1:8000
