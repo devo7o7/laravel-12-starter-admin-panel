@@ -66,17 +66,29 @@ If you want a clean grid/table layout, use this:
 
 ## 🖼 Screenshots
 
-| Login | Dashboard |
-|------|----------|
-| ![Login](screenshots/login.png) | ![Admin Dashboard](screenshots/AdminDashboard1.png) | ![User Dashboard](screenshots/UserDashboard.png)
+| Login | Admin Dashboard | User Dashboard |
+|------|------------------|----------------|
+| ![Login](screenshots/login.png) | ![Admin Dashboard](screenshots/AdminDashboard1.png) | ![User Dashboard](screenshots/UserDashboard.png) |
 
-| Users | Roles | Permissions |
-|------|------|------|
-| ![Users](screenshots/usersList.png) | ![Add User](screenshots/CreateUser.png) | ![Roles](screenshots/RolesManagement.png) | ![Add Role](screenshots/CreateRole.png) |  ![Permissions](screenshots/Permissions.png) | ![Add Permission](screenshots/CreatePermission.png)
+---
 
-| Profile |  Activity Logs | Analytics |
-|------|------|------|
-| ![Profile](screenshots/ProfileSettings.png) | ![Activity Logs](screenshots/MyActivityLogs.png) | ![Analytics](screenshots/Analytics.png) | ![Error](screenshots/AccessDenied.png) |  ![Reset Password](screenshots/ResetAccess.png) | ![Password Change](screenshots/ProfileSettings1.png)
+| Users List | Create User | Roles Management |
+|-----------|-------------|------------------|
+| ![Users](screenshots/usersList.png) | ![Create User](screenshots/CreateUser.png) | ![Roles](screenshots/RolesManagement.png) |
+
+| Create Role | Permissions | Create Permission |
+|------------|-------------|-------------------|
+| ![Create Role](screenshots/CreateRole.png) | ![Permissions](screenshots/Permissions.png) | ![Create Permission](screenshots/CreatePermission.png) |
+
+---
+
+| Profile Settings | Activity Logs | Analytics |
+|-----------------|--------------|----------|
+| ![Profile](screenshots/ProfileSettings.png) | ![Activity Logs](screenshots/MyActivityLogs.png) | ![Analytics](screenshots/Analytics.png) |
+
+| Access Denied | Reset Access | Password Change |
+|--------------|-------------|----------------|
+| ![Access Denied](screenshots/AccessDenied.png) | ![Reset Password](screenshots/ResetAccess.png) | ![Password Change](screenshots/ProfileSettings1.png) |
 
 
 
