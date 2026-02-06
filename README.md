@@ -52,6 +52,35 @@ This project includes:
 
 ---
 
+✅ Step 4: Push to GitHub
+
+After adding screenshots:
+
+git add .
+git commit -m "Added screenshots"
+git push
+
+⭐ Bonus Tip (For Best Look)
+
+If you want a clean grid/table layout, use this:
+
+## 🖼 Screenshots
+
+| Login | Dashboard |
+|------|----------|
+| ![Login](screenshots/login.png) | ![Admin Dashboard](screenshots/AdminDashboard1.png) | ![User Dashboard](screenshots/UserDashboard.png)
+
+| Users | Roles | Permissions |
+|------|------|------|
+| ![Users](screenshots/usersList.png) | ![Add User](screenshots/CreateUser.png) | ![Roles](screenshots/RolesManagement.png) | ![Add Role](screenshots/CreateRole.png) |  ![Permissions](screenshots/Permissions.png) | ![Add Permission](screenshots/CreatePermission.png)
+
+| Profile |  Activity Logs | Analytics |
+|------|------|------|
+| ![Profile](screenshots/ProfileSettings.png) | ![Activity Logs](screenshots/MyActivityLogs.png) | ![Analytics](screenshots/Analytics.png) | ![Error](screenshots/AccessDenied.png) |  ![Reset Password](screenshots/ResetAccess.png) | ![Password Change](screenshots/ProfileSettings1.png)
+
+
+
+---
 ## 📦 Installation
 
 ### 1️⃣ Clone Repository
