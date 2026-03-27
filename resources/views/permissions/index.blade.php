@@ -27,10 +27,16 @@
                 <h6 class="mb-0 fw-bold text-dark">Available Permissions</h6>
             </div>
             <div class="col-auto">
-                <div class="input-group input-group-sm" style="width: 250px;">
-                    <span class="input-group-text bg-light border-end-0"><i class="bi bi-search text-muted"></i></span>
-                    <input type="text" class="form-control bg-light border-start-0" placeholder="Search permissions...">
-                </div>
+
+             <form action="{{ route('permissions.index') }}" method="GET" class="d-flex">
+                    <div class="input-group input-group-sm">
+                        <input type="text" name="search" class="form-control border-end-0" 
+                               placeholder="Search permission..." value="{{ request('search') }}">
+                        <button class="btn btn-outline-secondary border-start-0 bg-white text-muted" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
