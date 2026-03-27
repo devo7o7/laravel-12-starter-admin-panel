@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="Dev Chaurasiya">
+      <meta name="author" content="Somlata Chaurasia">
     <title>@yield('title') | DC </title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="mt-4 footer-text">
-                    <small>Designed and Developed by <strong>Dev Chaurasiya </strong></small>
+                    <small>Designed and Developed by <strong>Somlata Chaurasia </strong></small>
                     <small class="opacity-75">© {{ date('Y') }}</small>
                 </div>
             </div>

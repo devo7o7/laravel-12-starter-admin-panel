@@ -128,7 +128,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
                     <span class="fw-bold fs-5">Company Name</span>
-                    <p class="small text-muted mb-0 mt-2">© {{ date('Y') }} All Rights Reserved. Designed by Dev Chaurasiya</p>
+                    <p class="small text-muted mb-0 mt-2">© {{ date('Y') }} All Rights Reserved. Designed by Somlata Chaurasia</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end mt-4 mt-md-0">
                     <a href="#" class="text-white me-3 text-decoration-none small">Privacy Policy</a>

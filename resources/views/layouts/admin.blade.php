@@ -215,7 +215,7 @@
         <footer class="bg-white border-top py-3 mt-auto">
             <div class="container-fluid text-center">
                 <p class="text-muted small mb-0">
-                    Designed & Developed by <strong>Dev Chaurasiya</strong> © {{ date('Y') }} All Rights Reserved
+                    Designed & Developed by <strong>Somlata Chaurasia</strong> © {{ date('Y') }} All Rights Reserved
                 </p>
             </div>
         </footer>

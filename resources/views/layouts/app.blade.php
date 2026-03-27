@@ -63,7 +63,7 @@
 <footer class="footer-fixed mt-auto">
   <div class="container">
     <small>
-     Designed & Developed by Dev Chaurasiya  © {{ date('Y') }} All Rights Reserved  
+     Designed & Developed by Somlata Chaurasia  © {{ date('Y') }} All Rights Reserved  
     </small>
   </div>
 </footer>
